@@ -55,8 +55,7 @@ addTodo = todoName => {
 clearCompleted = () => {
   this.setState({
     todos: this.state.todos.filter(todo =>  !todo.completed)
-      
-    
+
   });
 };
 

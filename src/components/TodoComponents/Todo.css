@@ -1,3 +1,32 @@
 .completed {
   text-decoration: line-through;
+  text-decoration-color: gold;
+}
+
+div.App {
+  width: 100%;
+  height:100%;
+  
+}
+h2 {
+  display:flex;
+  justify-content: center;
+  color: gold;
+}
+
+form {
+  display:flex;
+  justify-content: center;
+}
+div.todo-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+html {
+  background: black;
+}
+p {
+  color: red;
 }
