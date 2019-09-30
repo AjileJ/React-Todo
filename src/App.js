@@ -54,7 +54,9 @@ addTodo = todoName => {
 
 clearCompleted = () => {
   this.setState({
-    todos: this.state.todos.filter(todo => !todo.completed)
+    todos: this.state.todos.filter(todo =>  !todo.completed)
+      
+    
   });
 };
 
@@ -66,7 +68,7 @@ clearCompleted = () => {
         <h2>Todo List</h2>
         <TodoForm addTodo={this.addTodo}/>
         </div>
-        <TodoList todos={this.state.todos} toggleTodo={this.toggleTodo} />
+        <TodoList todos={this.state.todos} toggleTodo={this.toggleTodo} clearCompleted={this.clearCompleted} />
       </div>
     );
   }
